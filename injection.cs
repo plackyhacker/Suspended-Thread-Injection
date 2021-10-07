@@ -39,7 +39,7 @@ namespace ProcessInjection
             // you could even spawn a surregate process if you like
             int pid = Process.GetProcessesByName("notepad")[0].Id;
 
-            Debug("[+] OpenProcess with PID .", new string[] { pid.ToString() });
+            Debug("[+] OpenProcess with PID {0}.", new string[] { pid.ToString() });
 
             // get a handle to the explorer process
             // 0x001F0FFF = PROCESS_ALL access right
