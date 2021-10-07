@@ -48,7 +48,7 @@ msf6 exploit(multi/handler) >
 
 The binary was scanned using [antiscan.me](https://antiscan.me/scan/new/result?id=bpyZ4JnoDmkL) on 07/10/2021.
 
-![AV Scan](https://github.com/plackyhacker/SysCalls/blob/main/Suspended_scan.png?raw=true)
+![AV Scan](https://github.com/plackyhacker/SuspendedThreadInjection/blob/main/Suspended_scan.png?raw=true)
 
 # Notes
 
