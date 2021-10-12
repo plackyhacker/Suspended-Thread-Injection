@@ -16,7 +16,7 @@ The technique is quite simple:
 - Change the protection on the memory using `VirtualProtectEx`, setting the protection to `PAGE_EXECUTE_READ_WRITE`.
 - Resuming the remote thread using `ResumeThread`
 
-It would appear that protecting the page with `PAGE_NO_ACCESS` containing our meterpreter shellcode is not scanned by Defender and is not detected. By suspending the thread upon creation we are able to 'hold' the shellcode in memory until Defender has done it's scan then execute the shellcode when Defender has finished.
+It would appear that protecting the page with `PAGE_NOACCESS` containing our meterpreter shellcode is not scanned by Defender and is not detected. By suspending the thread upon creation we are able to 'hold' the shellcode in memory until Defender has done it's scan then execute the shellcode when Defender has finished.
 
 # Important
 Remember, the code looks for an instance of notepad to inject into, it is trivial to change this, or even spawn a surregate process to inject in to.
