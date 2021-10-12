@@ -10,7 +10,7 @@ The technique is quite simple:
 - Decrypt the meterpreter payload in memory.
 - Allocate some memory in the remote process using `VirtualAllocEx`, ensuring we assign the correct permissions to write to the memory of course.
 - Write our payload into the allocated memory using `WriteProcessMemory`.
-- Protect the memory using `VirtualProtectEx`, setting the protection to `PAGE_NO_ACCESS`.
+- Protect the memory using `VirtualProtectEx`, setting the protection to `PAGE_NOACCESS`.
 - Create a new suspended thread using `CreateRemoteThread`.
 - Sleep for 10 seconds while Defender scans the remote process memory for malicious code.
 - Change the protection on the memory using `VirtualProtectEx`, setting the protection to `PAGE_EXECUTE_READ_WRITE`.
