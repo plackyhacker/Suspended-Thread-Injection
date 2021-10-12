@@ -28,7 +28,7 @@ Execution of the code is shown below:
 [+] OpenProcess with PID 49416.
 [+] VirtualAllocEx (PAGE_EXECUTE_READ_WRITE) on 0x2C4.
 [+] WriteProcessMemory to 0x247A8CE0000.
-[+] VirtualProtectEx (PAGE_NO_ACCESS) on 0x247A8CE0000.
+[+] VirtualProtectEx (PAGE_NOACCESS) on 0x247A8CE0000.
 [+] CreateRemoteThread (suspended) to 0x247A8CE0000.
 [+] Sleeping whilst Defender scans the remote process.
 [+] VirtualProtectEx (PAGE_EXECUTE_READ_WRITE) on 0x247A8CE0000.
