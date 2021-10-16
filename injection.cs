@@ -55,7 +55,7 @@ namespace ProcessInjection
             Debug("[+] VirtualAllocEx (PAGE_EXECUTE_READ_WRITE) on 0x{0}.", new string[] { hProcess.ToString("X") });
 
             // allocate memory in the remote process
-            addr = VirtualAllocEx(hProcess, IntPtr.Zero, 0x1000, 0x3000, 0x40);
+            addr = VirtualAllocEx(hProcess, IntPtr.Zero, (uint) buf.Length, 0x3000, 0x40);
 
             Debug("[+] WriteProcessMemory to 0x{0}.", new string[] { addr.ToString("X") });
 
