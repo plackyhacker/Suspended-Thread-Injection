@@ -1,6 +1,8 @@
 # Suspended Thread Injection
 Another meterpreter injection technique using C# that attempts to bypass Defender.
 
+If you do use any of the code in these repositories **keep it legal**!
+
 # Introduction
 This code was written after reading [Bypassing Windows Defender Runtime Scanning](https://labs.f-secure.com/blog/bypassing-windows-defender-runtime-scanning/) by **F-Secure Labs**. The technique I have written isn't the same but it got me thinking about how I can inject meterpreter into a remote process and go under the Defender radar.
 
